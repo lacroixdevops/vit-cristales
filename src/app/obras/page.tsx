@@ -69,10 +69,24 @@ export default function ObrasPage() {
         </section>
       ))}
 
-      <section className="max-w-[1160px] mx-auto px-6 pb-20">
-        <div className="bg-[#169EE3] rounded-[20px] p-6 flex flex-col md:flex-row justify-between gap-4 items-center">
-          <p className="text-white text-[14px] font-bold">¿Viste lo que buscabas? Mandame foto de tu espacio.</p>
-          <Link href="/contacto" className="bg-white text-zinc-900 rounded-full px-6 py-3 text-[11px] font-bold">Pedir presupuesto →</Link>
+        <section className="max-w-[1160px] mx-auto px-6 pb-16">
+        <div className="relative overflow-hidden bg-[#0F2F4A] rounded-[28px] p-8 md:p-10 flex flex-col md:flex-row justify-between gap-6 items-start md:items-center border border-white/10">
+          {/* brillo de vidrio */}
+          <div className="absolute -top-24 -right-24 w-[300px] h-[300px] bg-[#169EE3]/20 rounded-full blur-[60px]"></div>
+          <div className="absolute -bottom-24 -left-24 w-[300px] h-[300px] bg-[#ABD2E5]/10 rounded-full blur-[60px]"></div>
+
+          <div className="relative z-10">
+            <p className="text-[9px] font-black tracking-[0.3em] text-[#ABD2E5] mb-2">COTIZACIÓN EXPRESS</p>
+            <h3 className="text-[22px] md:text-[26px] font-black text-white leading-[1.1] tracking-tight">¿Tenés medidas?<br/>Te cotizamos en <span className="text-[#ABD2E5]">2hs</span>.</h3>
+            <p className="text-[11px] text-white/60 mt-2">Mandá foto + medidas por WhatsApp y te pasamos precio cerrado.</p>
+          </div>
+
+          <div className="relative z-10 flex flex-col gap-3">
+            <Link href="/contacto" className="bg-white text-[#0F2F4A] rounded-full px-8 py-4 text-[11px] font-black tracking-widest hover:bg-[#ABD2E5] transition text-center">
+              COTIZAR AHORA →
+            </Link>
+            <p className="text-[9px] text-white/40 text-center font-bold tracking-widest">RESPUESTA EN 2HS • RÍO CUARTO</p>
+          </div>
         </div>
       </section>
     </main>
