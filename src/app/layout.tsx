@@ -23,8 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {/* DESKTOP */}
             <nav className="hidden md:flex gap-5 text-[11px] font-bold text-[#144B6F]/60 items-center">
               <Link href="/" className="hover:text-[#144B6F]">Inicio</Link>
-              <Link href="/obras" className="hover:text-[#144B6F]">Obras</Link>
               <Link href="/quienes-somos" className="hover:text-[#144B6F]">Quienes Somos</Link>
+              <Link href="/obras" className="hover:text-[#144B6F]">Obras</Link>
               <Link href="/servicios" className="hover:text-[#144B6F]">Servicios</Link>
               <Link href="/contacto" className="bg-[#144B6F] text-white px-4 py-2 rounded-full hover:bg-[#0f2f4a]">Contacto</Link>
             </nav>
